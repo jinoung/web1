@@ -4,58 +4,78 @@
   <title>WEB1-welcome</title>
   <meta charset="utf-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E9J2RB38X8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-E9J2RB38X8');
-</script>
-<style>
-
-  #active{
-    color:red;
-  }
-  .saw {
-    color:grey;
-  }
-  a {
-    color:black;
-    text-decoration: none;
-  }
-  h1{
-    font-size:45px;
-    text-align:center;
-  }
-</style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E9J2RB38X8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E9J2RB38X8');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <style>
+    body{
+      margin:0;
+    }
+    #active{
+      color:red;
+    }
+    .saw {
+      color:grey;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1{
+      font-size:45px;
+      text-align:center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid ol{
+      border-right:1px solid gray;
+      width: 100px;
+      margin: 0;
+      padding-left: 33px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #article{
+      padding-left: 25px;
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html"> WEB</a></h1>
-  <ol>
-    <li><a href="1.html" class="saw"> HTML</a></li>
-    <li><a href="2.html" class="saw" id="active"> CSS</a></li>
-    <li><a href="3.html"> JavaScript</a></li>
-  </ol>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw"> HTML</a></li>
+      <li><a href="2.html" class="saw" id="active"> CSS</a></li>
+      <li><a href="3.html"> JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>WELCOME</h2>
+        <p>
+          생활코딩의 세계에 오신 것을 환영합니다. 생활코딩은 일반인들에게 프로그래밍을
+          알려주는 무료 온라인, 오프라인 수업입니다.  어떻게 공부할 것인가를 생각해보기
+          전에 왜 프로그래밍을 공부하는 이유에 대한 이유를 함께 생각해보면 좋을 것 같습니다.
+          아래 영상을 한번 보시죠.
+        </p>
 
-    <h2>WELCOME</h2>
-    <h1>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
-    </h1>
-    <img src="opentutorials.jpg" width="100%" height="50%">
-    <div id="disqus_thread"></div>
-    <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
+      <h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </h3>
+      <img src="opentutorials.jpg" width="100%" height="50%">
+    </div>
+  </div>
+  <!--Start of DISQUS Script-->
+  <div id="disqus_thread"></div>
+  <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = 'https://web1-cw5tc4r4sz.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
@@ -64,17 +84,18 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
     </noscript>
+    <!--End of DISQUS Script-->
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/616e65f8f7c0440a591ee899/1fibjskod';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/616e65f8f7c0440a591ee899/1fibjskod';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
 </script>
 <!--End of Tawk.to Script-->
 </body>
